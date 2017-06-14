@@ -1,4 +1,3 @@
-
 %navbar-item {
 	list-style: none;
 	display: inline;
@@ -16,29 +15,4 @@
     font: $tamanho verdana, arial, tahoma, sans-serif;
     padding: $pad1 $pad2;
     margin-left: $margem;
-}
-
-#meunavbar {
-	background: orange;
-	display: table;
-	width: 100%;
-}
-
-li a {
-	text-decoration: none;
-}
-
-li a:hover {
-	@extend %navbar-hover;
-}
-
-li.brand {
-	@extend %navbar-item;
-	@include texto(15px, 5px, 5px, 10px);
-	margin-right: 25px;
-}
-
-li.item {
-	@extend %navbar-item;
-	@include texto(12px, 1px, 5px, 10px);
 }

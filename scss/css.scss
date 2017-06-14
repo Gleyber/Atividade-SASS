@@ -1,0 +1,26 @@
+@import './navbar.scss';
+
+#meunavbar {
+	background: orange;
+	display: table;
+	width: 100%;
+}
+
+li a {
+	text-decoration: none;
+}
+
+li a:hover {
+	@extend %navbar-hover;
+}
+
+li.brand {
+	@extend %navbar-item;
+	@include texto(15px, 5px, 5px, 10px);
+	margin-right: 25px;
+}
+
+li.item {
+	@extend %navbar-item;
+	@include texto(12px, 1px, 5px, 10px);
+}
