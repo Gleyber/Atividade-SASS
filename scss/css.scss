@@ -1,9 +1,11 @@
 @import './navbar.scss';
 
 #meunavbar {
-	background: orange;
-	display: table;
 	width: 100%;
+	background: orange;
+	display: flex;
+	height: 50px;
+	align-items: center;
 	li {
 		a {
 			text-decoration: none;
@@ -20,7 +22,7 @@
 	.item {
 		@extend %navbar-item;
 		@include texto(12px, 1px, 5px, 10px);
-}
 	}
+	
 }
 	
